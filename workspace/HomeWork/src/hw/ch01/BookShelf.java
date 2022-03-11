@@ -24,6 +24,7 @@ public class BookShelf implements Aggregate {
 		return new BookShelfIterator(this);
 	}
 
+	//문서연: 거꾸로 책을 꺼내는 BookShelfIteratorBackward객체 생성 메소드
 	@Override
 	public Iterator iteratorBackward() {
 		return new BookShelfIteratorBackward(this);
