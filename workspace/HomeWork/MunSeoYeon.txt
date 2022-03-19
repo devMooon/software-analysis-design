@@ -1,0 +1,8 @@
+#written by FileProperties
+#Wed Mar 16 16:05:20 KST 2022
+bornYear=2001
+Year=2019
+year=1999
+StudentId=20200675
+Name=MunSeoYeon
+Location=Jeonju
