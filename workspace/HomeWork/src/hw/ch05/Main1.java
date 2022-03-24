@@ -5,6 +5,7 @@ import hw.ch05.idcard.IDCardFactoryMunSeoYeon1;
 public class Main1 {
 
 	public static void main(String[] args) {
+		System.out.println("20200675 ¹®¼­¿¬");
 		IDCardFactoryMunSeoYeon1 factory1 = IDCardFactoryMunSeoYeon1.getInstance();
 		IDCardFactoryMunSeoYeon1 factory2 = IDCardFactoryMunSeoYeon1.getInstance();
 		

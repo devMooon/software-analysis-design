@@ -1,16 +1,25 @@
 package hw.ch05;
 
-public class Main2 extends Thread {
-	private String name;
-	
-	public Main2(String name) {
-		this.name = name;
-	}
-	public static void main(String[] args) {
-		Main2 choi = new Main2("최승훈");
-		Main2 mun = new Main2("문서연");
-		Main2 pack = new Main2("박소연");
-		
-	}
+import hw.ch05.idcard.IDCardFactoryMunSeoYeon2;
 
+public class Main2 extends Thread {
+
+	public Main2(String name) {
+		super(name);
+	}
+	
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+		super.run();
+		
+		System.out.println(getName() + ": " + IDCardFactoryMunSeoYeon2.getInstance());
+	}
+	
+	public static void main(String[] args) {
+		System.out.println("20200675 문서연");
+		new Main2("최승훈").start();
+		new Main2("문서연").start();
+		new Main2("박소연").start();
+	}
 }

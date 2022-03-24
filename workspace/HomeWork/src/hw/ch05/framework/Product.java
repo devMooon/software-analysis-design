@@ -1,5 +1,5 @@
 package hw.ch05.framework;
 
-public class Product {
-
+public abstract class Product {
+	public abstract void use();
 }
