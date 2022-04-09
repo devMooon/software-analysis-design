@@ -8,19 +8,16 @@ public class BubbleSorter implements Sorter {
 	public void sort(Comparable[] data) {
 		// TODO Auto-generated method stub
 		Comparable com;
-		int num;
 		
-		for(int i = 0; i < data.length; i++) {
-			
-			for(int k = i + 1; k < data.length; k++) {
-				num = i;
-				if(data[i].compareTo(data[k]) < 0) {
+		for(int i = 0; i < data.length-1; i++) {
+			for(int k = 0; k < data.length - 1 - i; k++) {
+				if(data[k].compareTo(data[k+1]) < 0) {
 					com = data[k];
-					data[k]= data[i];
-					data[i] = com;
+					data[k]= data[k+1];
+					data[k+1] = com;
 				}
-				num++;
 			}
+			
 		}
     }
 }
